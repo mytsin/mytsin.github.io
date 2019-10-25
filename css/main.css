@@ -1146,7 +1146,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #77ff28;
+  background: #ff37ff;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -1940,6 +1940,57 @@ pre .javascript .function {
   align-self: center;
   height: 30px;
 }
+.my_post_copyright {
+  width: 85%;
+  max-width: 45em;
+  margin: 2.8em auto 0;
+  padding: 0.5em 1em;
+  border: 1px solid #d3d3d3;
+  font-size: 0.93rem;
+  line-height: 1.6em;
+  word-break: break-all;
+  background: rgba(255,255,255,0.4);
+}
+.my_post_copyright p {
+  margin: 0;
+}
+.my_post_copyright span {
+  display: inline-block;
+  width: 5.2em;
+  color: #333;
+  font-weight: bold;
+}
+.my_post_copyright .raw {
+  margin-left: 1em;
+  width: 5em;
+}
+.my_post_copyright a {
+  color: #808080;
+  border-bottom: 0;
+}
+.my_post_copyright a:hover {
+  color: #0593d3;
+  text-decoration: underline;
+}
+.my_post_copyright:hover .fa-clipboard {
+  color: #000;
+}
+.my_post_copyright .post-url:hover {
+  font-weight: normal;
+}
+.my_post_copyright .copy-path {
+  margin-left: 1em;
+  width: 1em;
+}
+@media (max-width: 767px) {
+  .my_post_copyright .copy-path {
+    display: none;
+  }
+}
+.my_post_copyright .copy-path:hover {
+  color: #808080;
+  cursor: pointer;
+}
 .category-all-page .category-all-title {
   text-align: center;
 }
@@ -2116,6 +2167,14 @@ ul.breadcrumb li + li:last-child {
 }
 .tag-cloud a:hover {
   color: #222 !important;
+}
+.gt-header a,
+.gt-comments a,
+.gt-popup a {
+  border-bottom: none;
+}
+.gt-container .gt-popup .gt-action.is--active::before {
+  top: 0.7em;
 }
 .search-pop-overlay {
   background: rgba(0,0,0,0.3);
