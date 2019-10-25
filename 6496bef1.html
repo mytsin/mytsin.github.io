@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="zh-Hans">
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
@@ -27,7 +27,7 @@
     version: '7.4.2',
     exturl: false,
     sidebar: {"position":"left","display":"post","offset":12,"onmobile":false},
-    copycode: {"enable":true,"show_result":true,"style":"default"},
+    copycode: {"enable":false,"show_result":true,"style":"default"},
     back2top: {"enable":true,"sidebar":false,"scrollpercent":true},
     bookmark: {"enable":false,"color":"#222","save":"auto"},
     fancybox: false,
@@ -45,24 +45,28 @@
     path: './public/search.xml',
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
     translation: {
-      copy_button: '复制',
-      copy_success: '复制成功',
-      copy_failure: '复制失败'
+      copy_button: 'Copiar',
+      copy_success: 'Copiado',
+      copy_failure: 'Copiar falló'
     },
     sidebarPadding: 40
   };
 </script>
 
-  <meta name="description" content="GoAccess是一款开源的且具有交互视图界面的实时Web日志分析工具，可分析Apache&#x2F;Nginx等WEB日志，同时还支持生成HTML、JSON、CSV等数据报告。GoAccess既可以在终端中展示结果，也可以生成 HTML 报表在浏览器中查看，且生成的报表足够酷炫，这也是我为什么一直在折腾，想要实现的原因。我花了几天时间，查阅了大量的资料，终于实现了在浏览器中查看HTML报表">
+  <meta name="description" content="GoAccess是一款开源的且具有交互视图界面的实时Web日志分析工具，可分析Apache&#x2F;Nginx等WEB日志，同时还支持生成HTML、JSON、CSV等数据报告。GoAccess既可以在终端中展示结果，也可以生成HTML报表在浏览器中查看，且生成的报表足够酷炫，这也是我为什么一直在折腾，想要实现的原因。我花了几天时间，查阅了大量的资料，终于实现了在浏览器中查看HTML报表">
 <meta name="keywords" content="Goaccess,Nginx">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Goaccess - Nginx日志分析&#x2F;图表生成工具">
 <meta property="og:url" content="http:&#x2F;&#x2F;blog.mytsin.com&#x2F;6496bef1.html">
 <meta property="og:site_name" content="Tsin&#39;s Blog">
-<meta property="og:description" content="GoAccess是一款开源的且具有交互视图界面的实时Web日志分析工具，可分析Apache&#x2F;Nginx等WEB日志，同时还支持生成HTML、JSON、CSV等数据报告。GoAccess既可以在终端中展示结果，也可以生成 HTML 报表在浏览器中查看，且生成的报表足够酷炫，这也是我为什么一直在折腾，想要实现的原因。我花了几天时间，查阅了大量的资料，终于实现了在浏览器中查看HTML报表">
-<meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-10-25T10:18:34.045Z">
+<meta property="og:description" content="GoAccess是一款开源的且具有交互视图界面的实时Web日志分析工具，可分析Apache&#x2F;Nginx等WEB日志，同时还支持生成HTML、JSON、CSV等数据报告。GoAccess既可以在终端中展示结果，也可以生成HTML报表在浏览器中查看，且生成的报表足够酷炫，这也是我为什么一直在折腾，想要实现的原因。我花了几天时间，查阅了大量的资料，终于实现了在浏览器中查看HTML报表">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https:&#x2F;&#x2F;i.endpot.com&#x2F;image&#x2F;23RAY&#x2F;goaccess%20.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;i.endpot.com&#x2F;image&#x2F;BX0D2&#x2F;goaccess%2002.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;i.endpot.com&#x2F;image&#x2F;SDDRM&#x2F;goaccess%2001.jpg">
+<meta property="og:updated_time" content="2019-10-25T14:17:40.403Z">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https:&#x2F;&#x2F;i.endpot.com&#x2F;image&#x2F;23RAY&#x2F;goaccess%20.png">
 
 <link rel="canonical" href="http://blog.mytsin.com/6496bef1.html">
 
@@ -132,7 +136,7 @@
   </div>
 
   <div class="site-nav-toggle">
-    <div class="toggle" aria-label="切换导航栏">
+    <div class="toggle" aria-label="Cambiar a barra de navegación">
       <span class="toggle-line toggle-line-first"></span>
       <span class="toggle-line toggle-line-middle"></span>
       <span class="toggle-line toggle-line-last"></span>
@@ -146,31 +150,31 @@
   <ul id="menu" class="menu">
         <li class="menu-item menu-item-home">
 
-    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>首页</a>
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>Inicio</a>
 
   </li>
         <li class="menu-item menu-item-about">
 
-    <a href="/about/" rel="section"><i class="fa fa-fw fa-user"></i>关于</a>
+    <a href="/about/" rel="section"><i class="fa fa-fw fa-user"></i>Sobre mi</a>
 
   </li>
         <li class="menu-item menu-item-tags">
 
-    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>标签<span class="badge">3</span></a>
+    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>Etiquetas<span class="badge">3</span></a>
 
   </li>
         <li class="menu-item menu-item-categories">
 
-    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>分类<span class="badge">2</span></a>
+    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>Categorías<span class="badge">2</span></a>
 
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档<span class="badge">3</span></a>
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>Archivo<span class="badge">3</span></a>
 
   </li>
       <li class="menu-item menu-item-search">
-        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Buscar
         </a>
       </li>
   </ul>
@@ -184,7 +188,7 @@
   </span>
   <div class="search-input-container">
     <input autocomplete="off" autocorrect="off" autocapitalize="none"
-           placeholder="搜索..." spellcheck="false"
+           placeholder="Buscando..." spellcheck="false"
            type="text" id="search-input">
   </div>
   <span class="popup-btn-close">
@@ -220,7 +224,7 @@
       
   
   
-  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-CN">
+  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-Hans">
     <link itemprop="mainEntityOfPage" href="http://blog.mytsin.com/6496bef1.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -242,22 +246,22 @@
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
-              <span class="post-meta-item-text">发表于</span>
+              <span class="post-meta-item-text">Publicado el</span>
 
-              <time title="创建时间：2018-10-28 12:47:00" itemprop="dateCreated datePublished" datetime="2018-10-28T12:47:00+08:00">2018-10-28</time>
+              <time title="Creado por: 2018-10-28 12:47:00" itemprop="dateCreated datePublished" datetime="2018-10-28T12:47:00+08:00">2018-10-28</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2019-10-25 18:18:34" itemprop="dateModified" datetime="2019-10-25T18:18:34+08:00">2019-10-25</time>
+                <span class="post-meta-item-text">Editado el</span>
+                <time title="Modificado por: 2019-10-25 22:17:40" itemprop="dateModified" datetime="2019-10-25T22:17:40+08:00">2019-10-25</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">分类于</span>
+              <span class="post-meta-item-text">En</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/%E6%95%99%E7%A8%8B/" itemprop="url" rel="index">
                     <span itemprop="name">教程</span>
@@ -266,26 +270,26 @@
             </span>
 
           
-            <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
+            <span class="post-meta-item" title="Visitas" id="busuanzi_container_page_pv" style="display: none;">
               <span class="post-meta-item-icon">
                 <i class="fa fa-eye"></i>
               </span>
-              <span class="post-meta-item-text">阅读次数：</span>
+              <span class="post-meta-item-text">Visitas: </span>
               <span id="busuanzi_value_page_pv"></span>
             </span><br>
-            <span class="post-meta-item" title="本文字数">
+            <span class="post-meta-item" title="Cantidad de caracteres en el articulo">
               <span class="post-meta-item-icon">
                 <i class="fa fa-file-word-o"></i>
               </span>
-                <span class="post-meta-item-text">本文字数：</span>
+                <span class="post-meta-item-text">Cantidad de caracteres en el articulo: </span>
               <span>2.4k</span>
             </span>
-            <span class="post-meta-item" title="阅读时长">
+            <span class="post-meta-item" title="Tiempo de lectura">
               <span class="post-meta-item-icon">
                 <i class="fa fa-clock-o"></i>
               </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>2 分钟</span>
+                <span class="post-meta-item-text">Tiempo de lectura &asymp;</span>
+              <span>2 minutos.</span>
             </span>
 
         </div>
@@ -297,39 +301,41 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p><strong>GoAccess</strong>是一款开源的且具有交互视图界面的<strong>实时Web日志分析工具</strong>，可分析<strong>Apache/Nginx</strong>等WEB日志，同时还支持生成HTML、JSON、CSV等数据报告。GoAccess既可以在终端中展示结果，也可以生成 HTML 报表在浏览器中查看，且生成的报表足够酷炫，这也是我为什么一直在折腾，想要实现的原因。我花了几天时间，查阅了大量的资料，终于实现了在浏览器中查看HTML报表</p>
+        <p><img src="https://i.endpot.com/image/23RAY/goaccess%20.png" alt="Goaccess"></p>
+<p><code>GoAccess</code><strong>是一款开源的且具有交互视图界面的实时<code>Web</code>日志分析工具</strong>，可分析<code>Apache/Nginx</code>等WEB日志，同时还支持生成<code>HTML</code>、<code>JSON</code>、<code>CSV</code>等数据报告。<code>GoAccess</code>既可以在终端中展示结果，也可以生成<code>HTML</code>报表在浏览器中查看，且生成的报表足够酷炫，这也是我为什么一直在折腾，想要实现的原因。我花了几天时间，查阅了大量的资料，终于实现了在浏览器中查看HTML报表</p>
 <a id="more"></a>
 <p>先看一下最终效果：<a href="mytsin.com/analysis.html">mytsin.com/analysis.html已失效</a></p>
-<h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><p>系统：CentOS 6.10</p>
-<p>web服务：Nginx</p>
-<p>面板：[宝塔面板]<a href="https://www.bt.cn/download/linux.html" target="_blank" rel="noopener">https://www.bt.cn/download/linux.html</a>)</p>
-<p>日志文件：access.log</p>
-<p>工具：Goaccess-1.2</p>
+<p><img src="https://i.endpot.com/image/BX0D2/goaccess%2002.png" alt="GoAccess最终效果"></p>
+<h1 id="一、准备工作"><a href="#一、准备工作" class="headerlink" title="一、准备工作"></a>一、准备工作</h1><p>系统：<code>CentOS 6.10</code></p>
+<p>web服务：<code>Nginx</code></p>
+<p>面板：<a href="https://www.bt.cn/download/linux.html" target="_blank" rel="noopener">宝塔面板</a></p>
+<p>日志文件：<code>access.log</code></p>
+<p>工具：<code>Goaccess-1.2</code></p>
 <p>中文网站：<a href="goaccess.cc">goaccess.cc</a></p>
 <p>官方网站：<a href="goaccess.io">goaccess.io</a></p>
 <ul>
 <li>安装前请先备份好相关数据（例如网站数据库等）</li>
 <li>确定日志文件的所在目录</li>
 <li>以下日志文件、网站目录，根据自己的实际情况进行修改</li>
-<li>演示的日志文件及目录为 /home/wwwlogs/access.log</li>
-<li>演示的网站目录为 /www/wwwroot/mytsin.com/</li>
+<li>演示的日志文件及目录为<code>/home/wwwlogs/access.log</code></li>
+<li>演示的网站目录为<code>/www/wwwroot/mytsin.com/</code></li>
 </ul>
-<h2 id="安装Goaccess"><a href="#安装Goaccess" class="headerlink" title="安装Goaccess"></a>安装Goaccess</h2><p>虽然可以通过<strong>apt-get</strong>或<strong>yum+epel</strong>进行安装但是版本有点低功能上有些差异，但建议下载源码进行编译安装</p>
-<p>首先安装依赖包</p>
-<p>CentOS/Fedora/RHEL：<strong>yum install ncurses-devel geoip-devel</strong><br>Ubuntu/Debian：<strong>apt-get install libncursesw5-dev libgeoip-dev</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">#安装依赖</span><br><span class="line">yum -y install libmaxminddb-devel #下载源码</span><br><span class="line">wget https://tar.goaccess.io/goaccess-1.2.tar.gz</span><br><span class="line">#解压</span><br><span class="line">tar -xzvf goaccess-1.2.tar.gz</span><br><span class="line">#进入目录</span><br><span class="line">cd goaccess-1.2/</span><br><span class="line">#编译安装</span><br><span class="line">./configure --enable-utf8 --enable-geoip=mmdb --with-openssl --with-libmaxminddb-devel</span><br><span class="line">make &amp;&amp; make install</span><br></pre></td></tr></table></figure>
+<h1 id="二、安装Goaccess"><a href="#二、安装Goaccess" class="headerlink" title="二、安装Goaccess"></a>二、安装Goaccess</h1><p>虽然可以通过<code>apt-get</code>或<code>yum+epel</code>进行安装，但是版本不同且功能上有些差异，建议下载源码进行编译安装。</p>
+<h2 id="1、首先安装依赖包"><a href="#1、首先安装依赖包" class="headerlink" title="1、首先安装依赖包"></a>1、首先安装依赖包</h2><p><strong>CentOS/Fedora/RHEL：</strong><code>yum install ncurses-devel geoip-devel</code></p>
+<p><strong>Ubuntu/Debian：</strong><code>apt-get install libncursesw5-dev libgeoip-dev</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">#安装依赖</span><br><span class="line">$ yum -y install libmaxminddb-devel #下载源码</span><br><span class="line">$ wget https://tar.goaccess.io/goaccess-1.2.tar.gz</span><br><span class="line"></span><br><span class="line">#解压</span><br><span class="line">$ tar -xzvf goaccess-1.2.tar.gz</span><br><span class="line"></span><br><span class="line">#进入目录</span><br><span class="line">$ cd goaccess-1.2/</span><br><span class="line"></span><br><span class="line">#编译安装</span><br><span class="line">$ ./configure --enable-utf8 --enable-geoip=mmdb --with-openssl --with-libmaxminddb-devel</span><br><span class="line">$ make &amp;&amp; make install</span><br></pre></td></tr></table></figure>
 
-<p>如有需要，也可以安装<strong>GeoIP</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">cd /usr/local/src</span><br><span class="line">wget http://geolite.maxmind.com/downloadgeoip/api/c/GeoIP-1.4.6.tar.gz</span><br><span class="line">wget http://geolite.maxmind.com/downloadgeoip/database/GeoLiteCountry/GeoIP.dat.gz</span><br><span class="line">tar xzvf GeoIP-1.4.6.tar.gz</span><br><span class="line">cd GeoIP-1.4.6</span><br><span class="line">./configure &amp;&amp; make &amp;&amp; make install</span><br><span class="line">cd ..</span><br><span class="line">mv GeoIP.dat.gz /usr/local/share/GeoIP/</span><br></pre></td></tr></table></figure>
+<p>如有需要，也可以安装<code>GeoIP</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">$ cd /usr/local/src</span><br><span class="line">$ wget http://geolite.maxmind.com/downloadgeoip/api/c/GeoIP-1.4.6.tar.gz</span><br><span class="line">$ wget http://geolite.maxmind.com/downloadgeoip/database/GeoLiteCountry/GeoIP.dat.gz</span><br><span class="line">$ tar xzvf GeoIP-1.4.6.tar.gz</span><br><span class="line">$ cd GeoIP-1.4.6</span><br><span class="line">$ ./configure &amp;&amp; make &amp;&amp; make install</span><br><span class="line">$ cd ..</span><br><span class="line">$ mv GeoIP.dat.gz /usr/local/share/GeoIP/</span><br></pre></td></tr></table></figure>
 
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><h3 id="1、终端下查看"><a href="#1、终端下查看" class="headerlink" title="1、终端下查看"></a>1、终端下查看</h3><p>分析日志：<code>goaccess -f /home/wwwlogs/access.log --log-format=COMBINED</code></p>
+<h2 id="三、使用方法"><a href="#三、使用方法" class="headerlink" title="三、使用方法"></a>三、使用方法</h2><h3 id="1、终端下查看"><a href="#1、终端下查看" class="headerlink" title="1、终端下查看"></a>1、终端下查看</h3><p>分析日志：<code>goaccess -f /home/wwwlogs/access.log --log-format=COMBINED</code></p>
 <p><strong>常用参数说明：</strong></p>
-<p>-f 指定要分析的日志/path/to/log</p>
-<p>–log-format 日志的格式，LNMP默认格式为：COMBINED</p>
-<p>-a 在Host模块是否启用点开IP显示user-agents</p>
-<p>终端下效果如下图：</p>
+<p>-f 指定要分析的日志<code>/path/to/log</code></p>
+<p>–log-format 日志的格式，<code>LNMP</code>默认格式为：<code>COMBINED</code></p>
+<p>-a 在Host模块是否启用点开<code>IP</code>显示<code>user-agents</code></p>
+<p>终端下效果如下图：<br><img src="https://i.endpot.com/image/SDDRM/goaccess%2001.jpg" alt="终端显示效果"></p>
 <p><strong>操作快捷键</strong></p>
-<p>q 退出当前小窗口、模块视图或退出goaccess</p>
+<p>q 退出当前小窗口、模块视图或退出<code>Goaccess</code></p>
 <p>o 打开当前激活模块的详细视图，当前激活模块会以黄色显示</p>
 <p>0-9 数字0-9可以控制切换各个模块</p>
 <p>c 改变当前配色</p>
@@ -337,24 +343,27 @@
 <p>F1 帮助</p>
 <p>F5 窗口重新绘图</p>
 <p>2、生成图表网页</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">goaccess -f /home/wwwlogs/access.log --log-format=COMBINED -a &gt; www/wwwroot/mytsin.com/analysis.html</span><br></pre></td></tr></table></figure>
-<p>access.log：日志文件路径（请填写绝对路径）</p>
-<p>/mytsin.com/：为您站点根目录，根据自身情况修改</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ goaccess -f /home/wwwlogs/access.log --log-format=COMBINED -a &gt; www/wwwroot/mytsin.com/analysis.html</span><br></pre></td></tr></table></figure>
+<p><code>access.log</code>：日志文件路径（请填写绝对路径）</p>
+<p><code>/mytsin.com/</code>：为您站点根目录，根据自身情况修改</p>
 <p>运行后，就自动生成一个酷炫的网页图表，可以直接在浏览器里打开查看</p>
-<h2 id="定时生成HTML报告到站点目录"><a href="#定时生成HTML报告到站点目录" class="headerlink" title="定时生成HTML报告到站点目录"></a>定时生成HTML报告到站点目录</h2><p>每次都去手动生成报告太麻烦啦，有没有更简便的方法？写个简单的shell脚本自动生成就搞定啦~</p>
-<p>假设文件要放<code>在/root/</code>目录下</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd /root</span><br><span class="line">vim goaccess.sh</span><br></pre></td></tr></table></figure>
+<h3 id="2、定时生成HTML报告到站点目录"><a href="#2、定时生成HTML报告到站点目录" class="headerlink" title="2、定时生成HTML报告到站点目录"></a>2、定时生成HTML报告到站点目录</h3><p>每次都去手动生成报告太麻烦啦，有没有更简便的方法？写个简单的shell脚本自动生成就搞定啦~</p>
+<p>假设文件要放在<code>/root/</code>目录下</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ cd /root</span><br><span class="line">$ vim goaccess.sh</span><br></pre></td></tr></table></figure>
 
 <p>将下面的内容另存为<code>goaccess.sh</code></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">#!/bin/bash</span><br><span class="line"></span><br><span class="line">PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin</span><br><span class="line"></span><br><span class="line">export PATH</span><br><span class="line"></span><br><span class="line">goaccess /home/wwwlogs/access.log -a -o www/wwwroot/mytsin.com/analysis.html --log-format=COMBINED</span><br></pre></td></tr></table></figure>
-<p>/access.log：日志文件路径（请自行替换，填写绝对路径）</p>
-<p>/mytsin.com/：为您站点根目录，根据自身情况修改</p>
+<p><code>/access.log/</code>：日志文件路径（请自行替换，填写绝对路径）</p>
+<p><code>/mytsin.com/</code>：为您站点根目录，根据自身情况修改</p>
 <p>别忘记加上可执行权限：<code>chmod u+x goaccess.sh</code>，再使用<code>crontab</code>每小时生成一次HTML报告</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">#添加计划任务</span><br><span class="line">crontab -e</span><br><span class="line">#添加以下内容，/root/goaccess.sh为上面脚本的绝对路径</span><br><span class="line">*/15 * * * * /root/goaccess.sh &gt; /dev/null</span><br><span class="line">#重新加载cron配置和重启cron服务</span><br><span class="line">service crond reload</span><br><span class="line">service crond restart</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">#添加计划任务</span><br><span class="line">$ crontab -e</span><br><span class="line"></span><br><span class="line">#添加以下内容，/root/goaccess.sh为上面脚本的绝对路径</span><br><span class="line">$ */15 * * * * /root/goaccess.sh &gt; /dev/null</span><br><span class="line"></span><br><span class="line">#重新加载cron配置和重启cron服务</span><br><span class="line">$ service crond reload</span><br><span class="line">$ service crond restart</span><br></pre></td></tr></table></figure>
 <p>大功告成，这样<code>Goaccess</code>每隔15分钟就会为我们生成一次HTML日志报告，访问网站<a href="https://mytsin.com/analysis.html" target="_blank" rel="noopener">https://mytsin.com/analysis.html已失效</a>就可以看到直观的HTML报告啦</p>
-<p>参考资料：</p>
-<p><a href="https://www.vpser.net/manage/goaccess.html" target="_blank" rel="noopener">Nginx日志分析/图表生成工具 - goaccess</a></p>
-<p><a href="https://www.centos.bz/2018/07/centos%E5%AE%89%E8%A3%85goaccess%E5%BF%AB%E9%80%9F%E6%96%B9%E4%BE%BF%E7%9A%84%E5%88%86%E6%9E%90%E7%BD%91%E7%AB%99%E6%97%A5%E5%BF%97/" target="_blank" rel="noopener">CentOS安装GoAccess快速方便的分析网站日志</a></p>
+<h1 id="参考资料："><a href="#参考资料：" class="headerlink" title="参考资料："></a>参考资料：</h1><ol>
+<li><p><a href="https://www.vpser.net/manage/goaccess.html" target="_blank" rel="noopener">Nginx日志分析/图表生成工具 - goaccess</a></p>
+</li>
+<li><p><a href="https://www.centos.bz/2018/07/centos%E5%AE%89%E8%A3%85goaccess%E5%BF%AB%E9%80%9F%E6%96%B9%E4%BE%BF%E7%9A%84%E5%88%86%E6%9E%90%E7%BD%91%E7%AB%99%E6%97%A5%E5%BF%97/" target="_blank" rel="noopener">CentOS安装GoAccess快速方便的分析网站日志</a></p>
+</li>
+</ol>
 
     </div>
 
@@ -384,7 +393,7 @@
   <p><span>本文标题:</span>Goaccess - Nginx日志分析/图表生成工具</a></p>
   <p><span>文章作者:</span>Tsin</a></p>
   <p><span>发布时间:</span>2018年10月28日 - 12:47:00</p>
-  <p><span>最后更新:</span>2019年10月25日 - 18:18:34</p>
+  <p><span>最后更新:</span>2019年10月25日 - 22:17:40</p>
   <p><span>原始链接:</span><a href="/6496bef1.html" title="Goaccess - Nginx日志分析/图表生成工具">http://blog.mytsin.com/6496bef1.html</a>
     <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://blog.mytsin.com/6496bef1.html"  aria-label="复制成功！"></i></span>
   </p>
@@ -459,16 +468,16 @@
 
       <ul class="sidebar-nav motion-element">
         <li class="sidebar-nav-toc">
-          文章目录
+          Tabla de contenidos
         </li>
         <li class="sidebar-nav-overview">
-          站点概览
+          Inicio
         </li>
       </ul>
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#准备工作"><span class="nav-number">1.</span> <span class="nav-text">准备工作</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装Goaccess"><span class="nav-number">2.</span> <span class="nav-text">安装Goaccess</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#使用方法"><span class="nav-number">3.</span> <span class="nav-text">使用方法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1、终端下查看"><span class="nav-number">3.1.</span> <span class="nav-text">1、终端下查看</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#定时生成HTML报告到站点目录"><span class="nav-number">4.</span> <span class="nav-text">定时生成HTML报告到站点目录</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#一、准备工作"><span class="nav-number">1.</span> <span class="nav-text">一、准备工作</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#二、安装Goaccess"><span class="nav-number">2.</span> <span class="nav-text">二、安装Goaccess</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1、首先安装依赖包"><span class="nav-number">2.1.</span> <span class="nav-text">1、首先安装依赖包</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#三、使用方法"><span class="nav-number">2.2.</span> <span class="nav-text">三、使用方法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1、终端下查看"><span class="nav-number">2.2.1.</span> <span class="nav-text">1、终端下查看</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2、定时生成HTML报告到站点目录"><span class="nav-number">2.2.2.</span> <span class="nav-text">2、定时生成HTML报告到站点目录</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#参考资料："><span class="nav-number">3.</span> <span class="nav-text">参考资料：</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -485,20 +494,20 @@
           <a href="/archives/">
         
           <span class="site-state-item-count">3</span>
-          <span class="site-state-item-name">日志</span>
+          <span class="site-state-item-name">entradas</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
         <span class="site-state-item-count">2</span>
-        <span class="site-state-item-name">分类</span></a>
+        <span class="site-state-item-name">categorías</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
         <span class="site-state-item-count">3</span>
-        <span class="site-state-item-name">标签</span></a>
+        <span class="site-state-item-name">tags</span></a>
       </div>
   </nav>
 </div>
@@ -506,6 +515,11 @@
     <a href="/atom.xml" rel="alternate">
       <i class="fa fa-rss"></i>RSS
     </a>
+  </div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/mytsin" title="GitHub &amp;rarr; https:&#x2F;&#x2F;github.com&#x2F;mytsin" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+      </span>
   </div>
 
 
@@ -536,17 +550,17 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-area-chart"></i>
     </span>
-    <span title="站点总字数">4k</span>
+    <span title="Cantidad total de caracteres">4k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="站点阅读时长">4 分钟</span>
+    <span title="Tiempo total de lectura">4 minutos.</span>
 </div>
-  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v4.0.0
+  <div class="powered-by">Creado mediante <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> v4.0.0
   </div>
   <span class="post-meta-divider">|</span>
-  <div class="theme-info">主题 – <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> v7.4.2
+  <div class="theme-info">Tema – <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> v7.4.2
   </div>
 
         
@@ -556,7 +570,7 @@
       <span class="post-meta-item-icon">
         <i class="fa fa-user"></i>
       </span>
-      <span class="site-uv" title="总访客量">
+      <span class="site-uv" title="Visitantes totales">
         <span id="busuanzi_value_site_uv"></span>
       </span>
     </span>
@@ -565,7 +579,7 @@
       <span class="post-meta-item-icon">
         <i class="fa fa-eye"></i>
       </span>
-      <span class="site-pv" title="总访问量">
+      <span class="site-pv" title="Visitas totales">
         <span id="busuanzi_value_site_pv"></span>
       </span>
     </span>
