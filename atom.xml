@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.mytsin.com/"/>
-  <updated>2019-10-25T14:31:42.480Z</updated>
+  <updated>2019-10-25T14:32:02.986Z</updated>
   <id>http://blog.mytsin.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://blog.mytsin.com//2b38937.html"/>
     <id>http://blog.mytsin.com//2b38937.html</id>
     <published>2019-10-25T14:25:32.000Z</published>
-    <updated>2019-10-25T14:31:42.480Z</updated>
+    <updated>2019-10-25T14:32:02.986Z</updated>
     
     <content type="html"><![CDATA[<p>于2019年10月25日，网站迁移</p><ul><li>不再使用<code>Wordprees</code>搭建博客，采用<code>Github Page</code> + <code>Hexo</code>,主题使用的<code>NexT.Gemini</code></li><li>仍使用<code>blog.mytsin.com</code>作为博客域名</li></ul>]]></content>
     
