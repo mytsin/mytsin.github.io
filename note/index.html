@@ -53,18 +53,18 @@
   };
 </script>
 
-  <meta name="description" content="404                                                                                                                                                                 L2Dwidget.">
+  <meta name="description" content="记录个人日志、问题解决等，不定期更新">
 <meta name="keywords" content="Tsin">
 <meta property="og:type" content="website">
-<meta property="og:title" content="404 Not Found：该页无法显示">
-<meta property="og:url" content="http:&#x2F;&#x2F;blog.mytsin.com&#x2F;404.html">
+<meta property="og:title" content="记录">
+<meta property="og:url" content="http:&#x2F;&#x2F;blog.mytsin.com&#x2F;note&#x2F;index.html">
 <meta property="og:site_name" content="Tsin&#39;s Blog">
-<meta property="og:description" content="404                                                                                                                                                                 L2Dwidget.">
+<meta property="og:description" content="记录个人日志、问题解决等，不定期更新">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-10-25T10:04:39.383Z">
+<meta property="og:updated_time" content="2019-10-28T04:44:23.101Z">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://blog.mytsin.com/404.html">
+<link rel="canonical" href="http://blog.mytsin.com/note/">
 
 
 <script id="page-configurations">
@@ -78,7 +78,7 @@
   };
 </script>
 
-  <title>404 Not Found：该页无法显示 | Tsin's Blog
+  <title>记录 | Tsin's Blog
   </title>
   
 
@@ -231,7 +231,7 @@
     <div class="post-block" lang="zh-CN">
       <header class="post-header">
 
-<h1 class="post-title" itemprop="name headline">404 Not Found：该页无法显示
+<h1 class="post-title" itemprop="name headline">记录
 </h1>
 
 <div class="post-meta">
@@ -245,16 +245,10 @@
       
       
       <div class="post-body">
-          <!DOCTYPE html>
-<html>
-    <head>
-         <meta charset="UTF-8" />
-         <title>404</title>                                                                                                                                        
-    </head>
-    <body>
-         <script type="text/javascript" src="//qzonestyle.gtimg.cn/qzone/hybrid/app/404/search_children.js" homePageName="返回首页" homePageUrl="https://www.nickyam.com"></script>
-    <script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
-</html>
+          <blockquote>
+<p>记录个人日志、问题解决等，不定期更新</p>
+</blockquote>
+
       </div>
       
       
@@ -270,6 +264,7 @@
 
           </div>
           
+    <div class="comments" id="gitalk-container"></div>
 
         </div>
           
@@ -518,6 +513,23 @@ window.addEventListener('pjax:success', () => {
 
   
 
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.css">
+
+<script>
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js', () => {
+    var gitalk = new Gitalk({
+      clientID: '84413fe3acfe8d08bce7',
+      clientSecret: '5014f2804b5e98a60190e91ee93f6b0f15c05077',
+      repo: 'mytsin.github.io',
+      owner: 'mytsin',
+      admin: ['mytsin'],
+      id: '6ebdefcf7f2803cc241c7d967084a094',
+        language: 'zh-CN',
+      distractionFreeMode: 'true'
+    });
+    gitalk.render('gitalk-container');
+  }, window.Gitalk);
+</script>
     </div>
 
   
