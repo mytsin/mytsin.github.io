@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.mytsin.com/"/>
-  <updated>2019-10-28T13:26:27.453Z</updated>
+  <updated>2019-10-28T13:27:16.168Z</updated>
   <id>http://blog.mytsin.com/</id>
   
   <author>
@@ -18,10 +18,10 @@
   
   <entry>
     <title>建站一周年</title>
-    <link href="http://blog.mytsin.com/2019/10/One_year_already.html"/>
-    <id>http://blog.mytsin.com/2019/10/One_year_already.html</id>
+    <link href="http://blog.mytsin.com/2019/10/one-year-already.html"/>
+    <id>http://blog.mytsin.com/2019/10/one-year-already.html</id>
     <published>2019-10-28T13:24:41.000Z</published>
-    <updated>2019-10-28T13:26:27.453Z</updated>
+    <updated>2019-10-28T13:27:16.168Z</updated>
     
     <content type="html"><![CDATA[<p>荏苒时光，转眼已过了一年。<br>去年的今天，Tsin’s Blog正式上线。</p><a id="more"></a>]]></content>
     
@@ -39,8 +39,8 @@
   
   <entry>
     <title>学生优惠汇总</title>
-    <link href="http://blog.mytsin.com/2019/10/Student_discount.html"/>
-    <id>http://blog.mytsin.com/2019/10/Student_discount.html</id>
+    <link href="http://blog.mytsin.com/2019/10/student-discount.html"/>
+    <id>http://blog.mytsin.com/2019/10/student-discount.html</id>
     <published>2019-10-27T16:16:46.000Z</published>
     <updated>2019-10-28T12:46:09.591Z</updated>
     
@@ -64,8 +64,8 @@
   
   <entry>
     <title>如何入门或学习×××</title>
-    <link href="http://blog.mytsin.com/2019/10/How_to_get_started_or_learn_%C3%97%C3%97%C3%97.html"/>
-    <id>http://blog.mytsin.com/2019/10/How_to_get_started_or_learn_×××.html</id>
+    <link href="http://blog.mytsin.com/2019/10/how-to-get-started-or-learn-%C3%97%C3%97%C3%97.html"/>
+    <id>http://blog.mytsin.com/2019/10/how-to-get-started-or-learn-×××.html</id>
     <published>2019-10-27T15:05:06.000Z</published>
     <updated>2019-10-28T08:51:01.414Z</updated>
     
@@ -110,8 +110,8 @@
   
   <entry>
     <title>网站迁移</title>
-    <link href="http://blog.mytsin.com/2019/10/Website_migration.html"/>
-    <id>http://blog.mytsin.com/2019/10/Website_migration.html</id>
+    <link href="http://blog.mytsin.com/2019/10/website-migration.html"/>
+    <id>http://blog.mytsin.com/2019/10/website-migration.html</id>
     <published>2019-10-25T14:25:32.000Z</published>
     <updated>2019-10-28T08:51:45.285Z</updated>
     
@@ -138,8 +138,8 @@
   
   <entry>
     <title>Goaccess - Nginx日志分析/图表生成工具</title>
-    <link href="http://blog.mytsin.com/2018/10/Goaccess_Nginx.html"/>
-    <id>http://blog.mytsin.com/2018/10/Goaccess_Nginx.html</id>
+    <link href="http://blog.mytsin.com/2018/10/goaccess-nginx.html"/>
+    <id>http://blog.mytsin.com/2018/10/goaccess-nginx.html</id>
     <published>2018-10-28T04:47:00.000Z</published>
     <updated>2019-10-28T08:52:10.432Z</updated>
     
@@ -164,8 +164,8 @@
   
   <entry>
     <title>世界，你好</title>
-    <link href="http://blog.mytsin.com/2018/10/Hello_world.html"/>
-    <id>http://blog.mytsin.com/2018/10/Hello_world.html</id>
+    <link href="http://blog.mytsin.com/2018/10/hello-world.html"/>
+    <id>http://blog.mytsin.com/2018/10/hello-world.html</id>
     <published>2018-10-27T03:52:00.000Z</published>
     <updated>2019-10-28T09:33:12.229Z</updated>
     
