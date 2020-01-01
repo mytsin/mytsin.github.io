@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.mytsin.com/"/>
-  <updated>2019-10-28T13:27:16.168Z</updated>
+  <updated>2019-11-16T10:29:50.886Z</updated>
   <id>http://blog.mytsin.com/</id>
   
   <author>
@@ -15,6 +15,36 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Git常用命令速览</title>
+    <link href="http://blog.mytsin.com/2019/11/overview-of-git-common-commands.html"/>
+    <id>http://blog.mytsin.com/2019/11/overview-of-git-common-commands.html</id>
+    <published>2019-11-16T10:14:56.000Z</published>
+    <updated>2019-11-16T10:29:50.886Z</updated>
+    
+    <content type="html"><![CDATA[<table><thead><tr><th>代码</th><th>注释</th></tr></thead><tbody><tr><td>ssh-keygen -t rsa -C “<a href="mailto:your_email@example.com" target="_blank" rel="noopener">your_email@example.com</a>“</td><td>设置SSH</td></tr><tr><td>git config –global user.name “your name”</td><td>设置用户名</td></tr><tr><td>git config –global user.email “<a href="mailto:your_email@youremail.com" target="_blank" rel="noopener">your_email@youremail.com</a>“</td><td>设置邮箱</td></tr><tr><td>git init</td><td>初始化仓库</td></tr><tr><td>git status</td><td>查看是否存在改动</td></tr><tr><td>git add .</td><td>把文件添加到本地版本库</td></tr><tr><td>git commit</td><td>把文件提交到仓库</td></tr><tr><td>git remote add origin 你的远程库地址</td><td>关联到远程仓库</td></tr><tr><td>git pull –rebase origin master</td><td>远程库与本地同步合并</td></tr><tr><td>git push -u origin master</td><td>将最新的修改推送到远程仓库</td></tr><tr><td>git log</td><td>查看提交历史</td></tr><tr><td>git diff</td><td>比较工作区和暂存区</td></tr></tbody></table><p>拓展延伸：</p><ol><li><a href="https://www.liaoxuefeng.com/wiki/896043488029600" target="_blank" rel="noopener">Git教程 - 廖雪峰</a></li><li><a href="https://learngitbranching.js.org/" target="_blank" rel="noopener">图形化解释Git命令</a></li></ol>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;代码&lt;/th&gt;
+&lt;th&gt;注释&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td&gt;ssh-keygen -t rsa -C “&lt;a href=&quot;mailto:your_email@example.com&quot; ta
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>建站一周年</title>
