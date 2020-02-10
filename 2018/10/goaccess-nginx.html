@@ -61,12 +61,12 @@
 <meta property="og:site_name" content="Tsin&#39;s Blog">
 <meta property="og:description" content="GoAccess是一款开源的且具有交互视图界面的实时Web日志分析工具，可分析Apache&#x2F;Nginx等WEB日志，同时还支持生成HTML、JSON、CSV等数据报告。GoAccess既可以在终端中展示结果，也可以生成HTML报表在浏览器中查看，且生成的报表足够酷炫，这也是我为什么一直在折腾，想要实现的原因。我花了几天时间，查阅了大量的资料，终于实现了在浏览器中查看HTML报表">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;mytsin&#x2F;Image&#x2F;master&#x2F;Blog&#x2F;10-27&#x2F;Goaccess_01.png">
-<meta property="og:image" content="https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;mytsin&#x2F;Image&#x2F;master&#x2F;Blog&#x2F;10-27&#x2F;Goaccess_02.png">
-<meta property="og:image" content="https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;mytsin&#x2F;Image&#x2F;master&#x2F;Blog&#x2F;10-27&#x2F;Goaccess_03.jpg">
-<meta property="og:updated_time" content="2019-10-28T08:52:10.432Z">
+<meta property="og:image" content="https:&#x2F;&#x2F;i.loli.net&#x2F;2020&#x2F;02&#x2F;10&#x2F;LT3gxAURVzPkKnS.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;i.loli.net&#x2F;2020&#x2F;02&#x2F;10&#x2F;gMulXHWm18NcwTF.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;i.loli.net&#x2F;2020&#x2F;02&#x2F;10&#x2F;2dXsqOzWiNgJehZ.png">
+<meta property="og:updated_time" content="2020-02-10T12:21:33.327Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;mytsin&#x2F;Image&#x2F;master&#x2F;Blog&#x2F;10-27&#x2F;Goaccess_01.png">
+<meta name="twitter:image" content="https:&#x2F;&#x2F;i.loli.net&#x2F;2020&#x2F;02&#x2F;10&#x2F;LT3gxAURVzPkKnS.png">
 
 <link rel="canonical" href="http://blog.mytsin.com/2018/10/goaccess-nginx.html">
 
@@ -261,7 +261,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2019-10-28 16:52:10" itemprop="dateModified" datetime="2019-10-28T16:52:10+08:00">2019-10-28</time>
+                <time title="修改时间：2020-02-10 20:21:33" itemprop="dateModified" datetime="2020-02-10T20:21:33+08:00">2020-02-10</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -307,11 +307,11 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p><img src="https://raw.githubusercontent.com/mytsin/Image/master/Blog/10-27/Goaccess_01.png" alt="Goaccess官网界面"></p>
+        <p><img src="https://i.loli.net/2020/02/10/LT3gxAURVzPkKnS.png" alt="Goaccess官网界面"></p>
 <p><code>GoAccess</code><strong>是一款开源的且具有交互视图界面的实时<code>Web</code>日志分析工具</strong>，可分析<code>Apache/Nginx</code>等WEB日志，同时还支持生成<code>HTML</code>、<code>JSON</code>、<code>CSV</code>等数据报告。<code>GoAccess</code>既可以在终端中展示结果，也可以生成<code>HTML</code>报表在浏览器中查看，且生成的报表足够酷炫，这也是我为什么一直在折腾，想要实现的原因。我花了几天时间，查阅了大量的资料，终于实现了在浏览器中查看HTML报表</p>
 <a id="more"></a>
 <p>先看一下最终效果：<a href="mytsin.com/analysis.html">mytsin.com/analysis.html已失效</a></p>
-<p><img src="https://raw.githubusercontent.com/mytsin/Image/master/Blog/10-27/Goaccess_02.png" alt="Goaccess"></p>
+<p><img src="https://i.loli.net/2020/02/10/gMulXHWm18NcwTF.png" alt="Goaccess_02.png"></p>
 <h1 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h1><p>系统：<code>CentOS 6.10</code></p>
 <p>web服务：<code>Nginx</code></p>
 <p>面板：<a href="https://www.bt.cn/download/linux.html" target="_blank" rel="noopener">宝塔面板</a></p>
@@ -339,7 +339,7 @@
 <p>-f 指定要分析的日志<code>/path/to/log</code></p>
 <p>–log-format 日志的格式，<code>LNMP</code>默认格式为：<code>COMBINED</code></p>
 <p>-a 在Host模块是否启用点开<code>IP</code>显示<code>user-agents</code></p>
-<p>终端下效果如下图：<br><img src="https://raw.githubusercontent.com/mytsin/Image/master/Blog/10-27/Goaccess_03.jpg" alt="终端显示结果"></p>
+<p>终端下效果如下图：<br><img src="https://i.loli.net/2020/02/10/2dXsqOzWiNgJehZ.png" alt="Goaccess_03.jpg"></p>
 <p><strong>操作快捷键</strong></p>
 <p>q 退出当前小窗口、模块视图或退出<code>Goaccess</code></p>
 <p>o 打开当前激活模块的详细视图，当前激活模块会以黄色显示</p>
@@ -399,7 +399,7 @@
   <p><span>本文标题:</span>Goaccess - Nginx日志分析/图表生成工具</a></p>
   <p><span>文章作者:</span>Tsin</a></p>
   <p><span>发布时间:</span>2018年10月28日 - 12:47:00</p>
-  <p><span>最后更新:</span>2019年10月28日 - 16:52:10</p>
+  <p><span>最后更新:</span>2020年02月10日 - 20:21:33</p>
   <p><span>原始链接:</span><a href="/2018/10/goaccess-nginx.html" title="Goaccess - Nginx日志分析/图表生成工具">http://blog.mytsin.com/2018/10/goaccess-nginx.html</a>
     <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://blog.mytsin.com/2018/10/goaccess-nginx.html"  aria-label="复制成功！"></i></span>
   </p>
