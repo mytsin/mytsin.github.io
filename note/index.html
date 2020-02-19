@@ -53,17 +53,17 @@
   };
 </script>
 
-  <meta name="description" content="记录个人日志、问题解决等，不定期更新  2020 年 02 月 11 日如何使用VS code同时编辑多行，插入递增的数字?  有时在写代码，想要插入递增数字，如何实现这一功能？我们可以通过一个插件（increment-selection）来实现。 Step 1: 多光标操作 在VS code中有多种多行编辑的方法，根据自己的需要进行选择。 Win:  Ctrl+Alt+上下箭头  ALT+鼠标">
+  <meta name="description" content="记录个人日志、问题解决等，不定期更新  2020 年 02 月 19 日如何在Centos 7上Python 3.7？1.安装编译相关的工具123yum -y groupinstall &amp;quot;Development tools&amp;quot;yum -y install zlib-devel bzip2-devel openssl-devel ncurses-devel sqlite-deve">
 <meta name="keywords" content="Tsin">
 <meta property="og:type" content="website">
 <meta property="og:title" content="记录">
 <meta property="og:url" content="http:&#x2F;&#x2F;blog.mytsin.com&#x2F;note&#x2F;index.html">
 <meta property="og:site_name" content="Tsin&#39;s Blog">
-<meta property="og:description" content="记录个人日志、问题解决等，不定期更新  2020 年 02 月 11 日如何使用VS code同时编辑多行，插入递增的数字?  有时在写代码，想要插入递增数字，如何实现这一功能？我们可以通过一个插件（increment-selection）来实现。 Step 1: 多光标操作 在VS code中有多种多行编辑的方法，根据自己的需要进行选择。 Win:  Ctrl+Alt+上下箭头  ALT+鼠标">
+<meta property="og:description" content="记录个人日志、问题解决等，不定期更新  2020 年 02 月 19 日如何在Centos 7上Python 3.7？1.安装编译相关的工具123yum -y groupinstall &amp;quot;Development tools&amp;quot;yum -y install zlib-devel bzip2-devel openssl-devel ncurses-devel sqlite-deve">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https:&#x2F;&#x2F;i.loli.net&#x2F;2020&#x2F;02&#x2F;11&#x2F;byY45dcIxXr2NvM.png">
 <meta property="og:image" content="https:&#x2F;&#x2F;i.loli.net&#x2F;2020&#x2F;02&#x2F;11&#x2F;V75XUpPBRD4eEbF.png">
-<meta property="og:updated_time" content="2020-02-12T03:43:55.359Z">
+<meta property="og:updated_time" content="2020-02-19T02:20:17.911Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https:&#x2F;&#x2F;i.loli.net&#x2F;2020&#x2F;02&#x2F;11&#x2F;byY45dcIxXr2NvM.png">
 
@@ -251,6 +251,17 @@
           <blockquote>
 <p>记录个人日志、问题解决等，不定期更新</p>
 </blockquote>
+<h1 id="2020-年-02-月-19-日"><a href="#2020-年-02-月-19-日" class="headerlink" title="2020 年 02 月 19 日"></a>2020 年 02 月 19 日</h1><h3 id="如何在Centos-7上Python-3-7？"><a href="#如何在Centos-7上Python-3-7？" class="headerlink" title="如何在Centos 7上Python 3.7？"></a>如何在Centos 7上Python 3.7？</h3><h4 id="1-安装编译相关的工具"><a href="#1-安装编译相关的工具" class="headerlink" title="1.安装编译相关的工具"></a>1.安装编译相关的工具</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">yum -y groupinstall &quot;Development tools&quot;</span><br><span class="line">yum -y install zlib-devel bzip2-devel openssl-devel ncurses-devel sqlite-devel readline-devel tk-devel gdbm-devel db4-devel libpcap-devel xz-devel</span><br><span class="line">yum install libffi-devel -y</span><br></pre></td></tr></table></figure>
+
+<h4 id="2-下载安装包并解压"><a href="#2-下载安装包并解压" class="headerlink" title="2.下载安装包并解压"></a>2.下载安装包并解压</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cd #回到用户目录</span><br><span class="line">wget https://www.python.org/ftp/python/3.7.0/Python-3.7.0.tar.xz</span><br><span class="line">tar -xvJf  Python-3.7.0.tar.xz</span><br></pre></td></tr></table></figure>
+
+<h4 id="3-编译安装"><a href="#3-编译安装" class="headerlink" title="3.编译安装"></a>3.编译安装</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">mkdir /usr/local/python3 #创建编译安装目录</span><br><span class="line">cd Python-3.7.0</span><br><span class="line">./configure --prefix=/usr/local/python3</span><br><span class="line">make &amp;&amp; make install</span><br></pre></td></tr></table></figure>
+
+<h4 id="4-创建软连接"><a href="#4-创建软连接" class="headerlink" title="4.创建软连接"></a>4.创建软连接</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ln -s /usr/local/python3/bin/python3 /usr/local/bin/python3</span><br><span class="line">ln -s /usr/local/python3/bin/pip3 /usr/local/bin/pip3</span><br></pre></td></tr></table></figure>
+
+<h4 id="5-验证是否成功"><a href="#5-验证是否成功" class="headerlink" title="5.验证是否成功"></a>5.验证是否成功</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">python3 -V</span><br><span class="line">&gt; python3 -V</span><br><span class="line">pip3 -V</span><br><span class="line">&gt; pip 10.0.1 from /usr/local/python3/lib/python3.7/site-packages/pip (python 3.7)</span><br></pre></td></tr></table></figure>
+
+<p>原文链接：<a href="https://www.cnblogs.com/anxminise/p/9650206.html" target="_blank" rel="noopener">Centos7安装Python3.7</a></p>
 <h1 id="2020-年-02-月-11-日"><a href="#2020-年-02-月-11-日" class="headerlink" title="2020 年 02 月 11 日"></a>2020 年 02 月 11 日</h1><p>如何使用VS code同时编辑多行，插入递增的数字?</p>
 <p><img src="https://i.loli.net/2020/02/11/byY45dcIxXr2NvM.png" alt="increment-selection的效果图"></p>
 <p>有时在写代码，想要插入递增数字，如何实现这一功能？我们可以通过一个插件（<code>increment-selection</code>）来实现。</p>
@@ -371,7 +382,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#2020-年-02-月-11-日"><span class="nav-number">1.</span> <span class="nav-text">2020 年 02 月 11 日</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2020-年-02-月-05-日"><span class="nav-number">2.</span> <span class="nav-text">2020 年 02 月 05 日</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2020-年-02-月-04-日"><span class="nav-number">3.</span> <span class="nav-text">2020 年 02 月 04 日</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2020-年-01-月-01-日"><span class="nav-number">4.</span> <span class="nav-text">2020 年 01 月 01 日</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2019-年-11-月-15-日"><span class="nav-number">5.</span> <span class="nav-text">2019 年 11 月 15 日</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2019-年-11-月-14-日"><span class="nav-number">6.</span> <span class="nav-text">2019 年 11 月 14 日</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2019-年-10-月-29-日"><span class="nav-number">7.</span> <span class="nav-text">2019 年 10 月 29 日</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2019-年-10-月-28-日"><span class="nav-number">8.</span> <span class="nav-text">2019 年 10 月 28 日</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#2020-年-02-月-19-日"><span class="nav-number">1.</span> <span class="nav-text">2020 年 02 月 19 日</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#如何在Centos-7上Python-3-7？"><span class="nav-number">1.0.1.</span> <span class="nav-text">如何在Centos 7上Python 3.7？</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-安装编译相关的工具"><span class="nav-number">1.0.1.1.</span> <span class="nav-text">1.安装编译相关的工具</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-下载安装包并解压"><span class="nav-number">1.0.1.2.</span> <span class="nav-text">2.下载安装包并解压</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-编译安装"><span class="nav-number">1.0.1.3.</span> <span class="nav-text">3.编译安装</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-创建软连接"><span class="nav-number">1.0.1.4.</span> <span class="nav-text">4.创建软连接</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5-验证是否成功"><span class="nav-number">1.0.1.5.</span> <span class="nav-text">5.验证是否成功</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2020-年-02-月-11-日"><span class="nav-number">2.</span> <span class="nav-text">2020 年 02 月 11 日</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2020-年-02-月-05-日"><span class="nav-number">3.</span> <span class="nav-text">2020 年 02 月 05 日</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2020-年-02-月-04-日"><span class="nav-number">4.</span> <span class="nav-text">2020 年 02 月 04 日</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2020-年-01-月-01-日"><span class="nav-number">5.</span> <span class="nav-text">2020 年 01 月 01 日</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2019-年-11-月-15-日"><span class="nav-number">6.</span> <span class="nav-text">2019 年 11 月 15 日</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2019-年-11-月-14-日"><span class="nav-number">7.</span> <span class="nav-text">2019 年 11 月 14 日</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2019-年-10-月-29-日"><span class="nav-number">8.</span> <span class="nav-text">2019 年 10 月 29 日</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2019-年-10-月-28-日"><span class="nav-number">9.</span> <span class="nav-text">2019 年 10 月 28 日</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -420,10 +431,10 @@
 
       </div>
       
-        <div id="coronavirus">
-          <iframe style="width:100%"; width="560" height="380" src="https://coronavirus.app/map?embed=true" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-          </iframe>
-        </div>
+      <div id="coronavirus">
+        <iframe style="width:100%"; width="560" height="380" src="https://coronavirus.app/map?embed=true" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+        </iframe>
+      </div>
 
     </div>
   </aside>
